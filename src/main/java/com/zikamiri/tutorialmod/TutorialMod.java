@@ -1,5 +1,7 @@
 package com.zikamiri.tutorialmod;
 
+import com.zikamiri.tutorialmod.block.ModBlocks;
+import com.zikamiri.tutorialmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,6 +13,7 @@ public class TutorialMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+        ModItems.registerModItems();
+        ModBlocks.registerModBlocks();
 	}
 }
